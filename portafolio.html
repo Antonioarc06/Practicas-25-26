@@ -1,45 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+    <meta charset="UTF-8">
     <title>Mi Portafolio</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav a {
+            color: white;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 15px;
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
+
+        form {
+            background: white;
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        button {
+            padding: 8px 12px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+
 </head>
+
 <body>
 
     <header>
         <h1>Antonio Arcos Serrano</h1>
+
         <nav>
-            <a href="#sobre-mi">Sobre mi</a> |
-            <a href="#habilidades">Habilidades</a> |
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#sugerencias">Sugerencias</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
 
-        <section id="sobre-mi">
-            <h2>Sobre mí</h2>
-            <p>Hola! Soy un estudiante de Desarrollo de Aplicaciones Multiplataforma.
-               Me gusta la programacion y el diseño de paginas web.</p>
+        <article>
+
+            <section id="sobre-mi">
+                <h2>Sobre mí</h2>
+                <p>Hola! Soy un estudiante de Desarrollo de Aplicaciones Multiplataforma.
+                    Me gusta la programación y el diseño de páginas web.</p>
+            </section>
+
+            <section id="habilidades">
+                <h2>Habilidades</h2>
+                <ul>
+                    <li>Java</li>
+                    <li>MySQL</li>
+                    <li>HTML y CSS</li>
+                    <li>JavaScript</li>
+                    <li>Git y GitHub</li>
+                </ul>
+            </section>
+
+        </article>
+
+        <!-- Formulario -->
+        <section id="sugerencias">
+            <h2>Sugerencias</h2>
+
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
         </section>
-
-
-        <!-- Sección habilidades -->
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Java</li>
-                <li>MySQL</li>
-                <li>HTML y CSS</li>
-                <li>JavaScript</li>
-                <li>Git y GitHub</li>
-            </ul>
-        </section>
-
-
 
     </main>
 
     <footer>
+        <p> 2026 Antonio Arcos Serrano</p>
     </footer>
 
 </body>
+
 </html>
