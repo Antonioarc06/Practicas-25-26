@@ -17,9 +17,12 @@
             text-align: center;
         }
 
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            list-style: none;
+            padding: 0;
         }
 
         nav a {
@@ -35,6 +38,18 @@
             margin-bottom: 15px;
             padding: 15px;
             border: 1px solid #ccc;
+        }
+
+        .proyectos {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .proyecto {
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 200px;
         }
 
         form {
@@ -60,6 +75,18 @@
             text-align: center;
             padding: 10px;
         }
+
+        .redes {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .redes a {
+            color: white;
+            text-decoration: none;
+        }
     </style>
 
 </head>
@@ -73,6 +100,7 @@
             <ul>
                 <li><a href="#sobre-mi">Sobre mí</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#sugerencias">Sugerencias</a></li>
             </ul>
         </nav>
@@ -99,9 +127,21 @@
                 </ul>
             </section>
 
+            <section id="proyectos">
+                <h2>Proyectos futuros</h2>
+
+                <div class="proyectos">
+
+                    <div class="proyecto">
+                        <h3>Proyecto Mini Rogue</h3>
+                        <p>Versión del juego de mesa Mini Rogue programado en Java.</p>
+                    </div>
+
+                </div>
+            </section>
+
         </article>
 
-        <!-- Formulario -->
         <section id="sugerencias">
             <h2>Sugerencias</h2>
 
@@ -122,7 +162,13 @@
     </main>
 
     <footer>
-        <p> 2026 Antonio Arcos Serrano</p>
+        <p>@Copyright 2026 Antonio Arcos Serrano</p>
+
+        <div class="redes">
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">GitHub</a>
+        </div>
     </footer>
 
 </body>
