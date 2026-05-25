@@ -1,0 +1,23 @@
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.task-list-vacio {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 48px 24px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.task-list-vacio p {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+}
+
+.vacio-sub {
+  font-size: 0.88rem !important;
+  margin-top: 8px;
+}

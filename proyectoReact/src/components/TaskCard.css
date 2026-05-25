@@ -1,0 +1,135 @@
+.task-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  display: flex;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.task-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.task-card.completada {
+  opacity: 0.65;
+}
+
+.prioridad-barra {
+  width: 5px;
+  flex-shrink: 0;
+}
+
+.prioridad-barra.alta { background: var(--alta); }
+.prioridad-barra.media { background: var(--media); }
+.prioridad-barra.baja { background: var(--baja); }
+
+.task-card-body {
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.task-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.task-titulo {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.task-titulo.tachado {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+
+.task-badges {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.prioridad-badge.alta { background: var(--alta-bg); color: var(--alta); }
+.prioridad-badge.media { background: var(--media-bg); color: var(--media); }
+.prioridad-badge.baja { background: var(--baja-bg); color: var(--baja); }
+
+.estado-badge.pendiente { background: #f0f0f0; color: var(--pendiente); }
+.estado-badge.progreso { background: #e8f4fd; color: var(--progreso); }
+.estado-badge.completada { background: var(--baja-bg); color: var(--completada); }
+
+.task-descripcion {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.task-fecha {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.task-acciones {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+  flex-wrap: wrap;
+}
+
+.task-acciones button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+}
+
+.btn-completar {
+  background: var(--baja-bg);
+  color: var(--baja);
+  border-color: var(--baja) !important;
+}
+
+.btn-completar:hover {
+  background: var(--baja);
+  color: white;
+}
+
+.btn-editar {
+  background: #e8f4fd;
+  color: var(--progreso);
+  border-color: var(--progreso) !important;
+}
+
+.btn-editar:hover {
+  background: var(--progreso);
+  color: white;
+}
+
+.btn-eliminar {
+  background: var(--alta-bg);
+  color: var(--alta);
+  border-color: var(--alta) !important;
+}
+
+.btn-eliminar:hover {
+  background: var(--alta);
+  color: white;
+}

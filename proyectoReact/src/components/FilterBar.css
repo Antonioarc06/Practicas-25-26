@@ -1,0 +1,67 @@
+.filter-bar {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  box-shadow: var(--shadow);
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.filtro-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filtro-grupo label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.filtro-opciones {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.filtro-btn {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  background: var(--bg);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  transition: all 0.2s;
+}
+
+.filtro-btn:hover {
+  border-color: #2c3e50;
+  color: var(--text);
+}
+
+.filtro-btn.activo {
+  background: #2c3e50;
+  color: white;
+  border-color: #2c3e50;
+}
+
+.orden-select {
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.85rem;
+  background: var(--bg);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.orden-select:focus {
+  outline: none;
+  border-color: #2c3e50;
+}
